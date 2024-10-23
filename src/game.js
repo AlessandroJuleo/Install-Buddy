@@ -136,7 +136,7 @@ function clearGame (){
     displayMessage("");
     secretNumber = Math.floor(Math.random() * 100) + 1;
     guessInput.value = "";
-    playAgainBtn.remove();
+    buttnDivEL.remove(buttn);
     triedNumb.remove();
 
     storedNumbers = JSON.parse(localStorage.getItem('numbersTried'));
